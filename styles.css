@@ -27,7 +27,7 @@ body {
   background-color: var(--color-eggshell);
   width: 100vw;
   overflow-x: hidden;
-  padding: 12rem 0;
+  padding: min(12rem, 10vw) 0;
   font-family: "Outfit", sans-serif;
   font-size: var(--text-normal);
   color: var(--color-wenge-brown);
@@ -38,7 +38,7 @@ body {
 }
 
 .recipe-container {
-  width: 73.6rem;
+  width: min(73.6rem, 90vw);
   background-color: var(--color-white);
   padding: 4rem;
   border-radius: 2.4rem;
@@ -164,4 +164,29 @@ tr:last-child td {
 
 .attribution a {
   color: var(--color-nutmeg);
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 0;
+  }
+
+  .recipe-container {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .recipe-img {
+    height: 46vw;
+  }
+
+  .recipe-content {
+    padding: 4rem;
+  }
+
+  .recipe-title {
+    font-size: 3.2rem;
+  }
 }
