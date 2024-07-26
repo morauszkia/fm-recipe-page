@@ -1,4 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+@font-face {
+  font-family: "Outfit";
+  font-weight: 400;
+  src: url("./assets/fonts/outfit-regular.woff2") format("woff2"),
+    url("./assets/fonts/outfit-regular.woff") format("woff"),
+    url("./assets/fonts/outfit-regular.otf") format("opentype"),
+    url("./assets/fonts/outfit-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-weight: 600;
+  src: url("./assets/fonts/outfit-semibold.woff2") format("woff2"),
+    url("./assets/fonts/outfit-semibold.woff") format("woff"),
+    url("./assets/fonts/outfit-semibold.otf") format("opentype"),
+    url("./assets/fonts/outfit-semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-weight: 700;
+  src: url("./assets/fonts/outfit-bold.woff2") format("woff2"),
+    url("./assets/fonts/outfit-bold.woff") format("woff"),
+    url("./assets/fonts/outfit-bold.otf") format("opentype"),
+    url("./assets/fonts/outfit-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Young Serif";
+  font-weight: 400;
+  src: url("./assets/fonts/youngserif-regular.woff2") format("woff2"),
+    url("./assets/fonts/youngserif-regular.woff") format("woff"),
+    url("./assets/fonts/youngserif-regular.otf") format("opentype"),
+    url("./assets/fonts/youngserif-regular.ttf") format("truetype");
+}
 
 * {
   margin: 0;
@@ -123,7 +157,7 @@ li {
 }
 
 li::marker {
-  font-weight: 800;
+  font-weight: 700;
   color: var(--color-nutmeg);
 }
 
